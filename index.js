@@ -4,12 +4,11 @@ const Kafka = require('kafkajs').Kafka
 async function bootstrap() {
   const kafka = new Kafka({
     clientId: 'kafka-producer',
-    brokers: ['topical-ray-12627-us1-kafka.upstash.io:9092'],
+    brokers: ['*******'],
     sasl: {
       mechanism: 'scram-sha-256',
-      username:
-        'dG9waWNhbC1yYXktMTI2MjckOzbNM21U5B5eaw8lELsy3n2AAaAjubj8x2mF2zk',
-      password: '8021921c24644cf292b1f9b5c75bd734',
+      username: '********',
+      password: '*******',
     },
     ssl: true,
   })
